@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1st STEP</title>
+    <link rel="icon" href="/img/1stSTEP-favicon.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header
+      class="bg-[#1A1819] flex justify-between items-center px-4 py-6 md:px-10 w-full sticky top-0 z-10"
+    >
+      <div>
+        <a href="index.html"
+          ><img
+            class="w-auto h-10 block"
+            src="/img/1stSTEP-logo.png"
+            loading="lazy"
+            rel="preload"
+            alt
+        /></a>
+      </div>
+      <nav class="md:flex hidden gap-8">
+        <ul class="flex gap-4">
+          <li class=""><a class="link" href="/jp/bar.html">Bar</a></li>
+          <li class="">
+            <a
+              class="link flex gap-2"
+              href="http://1st-step.notion.site"
+              target="_blank"
+              ><span>Shared office</span
+              ><img class="w-3 h-3" src="./img/separatewindow-icon.png"
+            /></a>
+          </li>
+          <li class="">
+            <a class="link" href="/jp/recruit.html">Recruit</a>
+          </li>
+        </ul>
+        <div class="relative md:block hidden">
+          <button class="lang-switcher flex items-center gap-3">
+            <span>JP/EN/VN</span
+            ><img
+              class="expand-icon w-4 h-auto transition-transform duration-300 ease-in-out"
+              src="/img/expand-more-icon.png"
+              alt
+            />
+          </button>
+          <div
+            class="lang-menu w-40 p-6 pr-16 text-black bg-white opacity-0 scale-y-0 origin-[100%_0%] transition-all duration-300 ease-in-out rounded-xl absolute top-10 right-0"
+          >
+            <ul class="lang-menu-items grid gap-4">
+              <li class="lang-menu-item">
+                <a
+                  href="/jp/bar.html"
+                  class="hover:underline hover:underline-offset-4"
+                  >日本語</a
+                >
+              </li>
+              <li class="lang-menu-item">
+                <a
+                  href="/en/bar.html"
+                  class="hover:underline hover:underline-offset-4"
+                  >English</a
+                >
+              </li>
+              <li class="lang-menu-item">
+                <a
+                  href="/vn/bar.html"
+                  class="hover:underline hover:underline-offset-4"
+                  >Tiếng Việt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav menu drawer for mobile screen -->
+      <div class="nav-menu__container md:hidden block">
+        <input type="checkbox" id="burger" />
+        <label for="burger" class="nav-menu__button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="nav-menu flex flex-col gap-6 p-10">
+          <ul class="menu-items flex flex-col gap-3">
+            <li><a href="/jp/bar.html">Bar</a></li>
+            <li>
+              <a
+                class="flex gap-2"
+                href="http://1st-step.notion.site"
+                target="_blank"
+                ><span>Shared office</span
+                ><img class="w-3 h-3" src="./img/separatewindow-icon.png" 
+              /></a>
+            </li>
+            <li><a href="/jp/recruit.html">Recruit</a></li>
+          </ul>
+          <div class="pb-2 border-b-[1px] border-[#424242]">
+            <button class="lang-switcher flex items-center gap-3">
+              <span>JP/EN/VN</span
+              ><img
+                class="expand-icon w-4 h-auto transition-transform duration-300 ease-in-out"
+                src="/img/expand-more-icon.png"
+                alt
+              />
+            </button>
+            <div
+              class="lang-menu--mobile h-0 scale-y-0 origin-[100%_0%] opacity-0 transition-all duration-500 ease-in-out"
+            >
+              <ul class="lang-menu-items grid justify-end gap-4 py-4">
+                <li class="lang-menu-item">
+                  <a href="/jp/bar.html">日本語</a>
+                </li>
+                <li class="lang-menu-item">
+                  <a href="/en/bar.html">English</a>
+                </li>
+                <li class="lang-menu-item">
+                  <a href="/vn/bar.html">Tiếng Việt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="top-page mb-10 flex flex-col md:flex-row" id="bar">
+        <div
+          class="bar-image flex justify-center items-center"
+          data-aos="fadeUp"
+        >
+          <h1
+            data-aos="fadeUp"
+            class="relative inline-block text-center text-[1.5rem] tracking-[0.3em] leading-[2rem] md:text-[1.875rem] xl:text-[2.25rem] xl:tracking-[0.5em]"
+          >
+            <div
+              class="absolute w-full h-full top-1 md:top-2 left-1 md:left-2 bg-[#FFFFFF4D] border-[1px] md:border-2 border-white z-10"
+            ></div>
+            <a
+              data-aos="custom-fade-upleft"
+              data-aos-duration="500"
+              data-aos-delay="800"
+              class="bg-[#1A1819] relative block w-full h-auto z-20 pl-8 md:pl-10 pr-6 py-2 md:py-4 translate-y-1 md:translate-y-2 md:hover:translate-y-2 translate-x-1 md:translate-x-2 md:hover:translate-x-2"
+              href="/jp/bar.html"
+              ><span>Bar</span></a
+            >
+          </h1>
+        </div>
+        <div
+          class="sharedoffice-image flex justify-center items-center"
+          data-aos="fadeUp"
+        >
+          <h1
+            data-aos="fadeUp"
+            class="relative inline-block text-center text-[1.5rem] tracking-[0.3em] leading-[2rem] md:text-[1.875rem] xl:text-[2.25rem] xl:tracking-[0.5em]"
+          >
+            <div
+              class="bg-[#FFFFFF4D] w-full h-full absolute top-1 md:top-2 left-1 md:left-2 border-[1px] md:border-2 border-white z-10"
+            ></div>
+            <a data-aos="custom-fade-upleft" data-aos-delay="800" data-aos-duration="500"
+            class="bg-[#1A1819] w-full h-auto relative flex pl-8 md:pl-10 pr-6 py-2 md:py-4 translate-y-1 md:translate-y-2 md:hover:translate-y-2 translate-x-1 md:translate-x-2 md:hover:translate-x-2 z-20"
+            href="http://1st-step.notion.site" target="_blank"><span>Shared Office</span><img class="w-4 h-4" src="./img/separatewindow-icon.png"></a>
+          </h1>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div
+        class="flex flex-col items-center gap-4 py-8 md:px-8 px-4 border-t-[1px] border-[#9999]"
+      >
+        <div class="reveal-block pb-4 px-10 border-b-[1px] border-[#9999]">
+          <a href="index.html">
+            <img
+              class="w-10 h-auto"
+              src="./img/1stSTEP-y-logo.png"
+              data-aos="custom-fade-up"
+              loading="lazy"
+              alt
+          /></a>
+        </div>
+        <div class="flex flex-col items-center px-4">
+          <div class="reveal-block">
+            <h5 data-aos="custom-fade-up">お問い合わせ・予約 / Contact</h5>
+          </div>
+          <div class="reveal-block">
+            <div class="flex gap-2" data-aos="custom-fade-up">
+              <a href="mailto:1st.step.vn@gmail.com"
+                ><img
+                  class="w-6 h-auto"
+                  src="/img/email-icon.png"
+                  loading="lazy"
+                  alt
+              /></a>
+              <a href="https://www.facebook.com/people/1st-STEP/61560350972272/"
+                ><img
+                  class="w-6 h-auto"
+                  src="/img/facebook-icon.png"
+                  loading="lazy"
+                  alt /></a
+              ><a
+                href="https://liff.line.me/1645278921-kWRPP32q/?accountId=358xskee"
+                ><img
+                  class="w-6 h-auto"
+                  src="/img/LINE-icon.png"
+                  loading="lazy"
+                  alt
+              /></a>
+              <a
+                href="https://www.instagram.com/1st.step.vn?igsh=MXZmbm1taWlrZjZnMQ=="
+                ><img
+                  class="w-6 h-auto"
+                  src="/img/instagram-icon.png"
+                  loading="lazy"
+                  alt
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-xs flex justify-center py-4 border-t-[1px] border-[#9999]"
+      >
+        <p>© 2024 1st STEP All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 0,
+        once: true,
+      });
+      document.querySelectorAll("img").forEach((img) => {
+        img.addEventListener("load", () => {
+          AOS.refresh();
+        });
+      });
+
+      const delayedElements = document.querySelectorAll("[data-aos-delay]");
+      setTimeout(() => {
+        delayedElements.forEach((element) => {
+          element.removeAttribute("data-aos-delay");
+        });
+      }, 1000);
+    </script>
+    <script src="/script.js"></script>
+  </body>
+</html>
